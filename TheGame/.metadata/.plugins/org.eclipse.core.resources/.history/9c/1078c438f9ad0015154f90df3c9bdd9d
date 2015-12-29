@@ -1,0 +1,19 @@
+
+public class Character {
+	String name = null;
+	String race = null;
+	
+	int strength = 0;
+	int intelligence = 0;
+	int agility = 0;
+	int endurance = 0;
+	int horniness = 69;
+	
+	String flavorText = null;
+	
+//	int attack (int strength)
+	{
+		
+	}
+	
+	}

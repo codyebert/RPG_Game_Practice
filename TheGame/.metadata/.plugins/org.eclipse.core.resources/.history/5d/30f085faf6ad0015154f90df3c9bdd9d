@@ -1,0 +1,14 @@
+
+import java.lang.Math;
+import java.util.Random;
+
+public class main {
+
+	public static void main(String[] args) 
+	{
+		int num = (int) (Math.random() * 50 + 1);
+		System.out.println("Random number = " + num);
+
+	}
+
+}

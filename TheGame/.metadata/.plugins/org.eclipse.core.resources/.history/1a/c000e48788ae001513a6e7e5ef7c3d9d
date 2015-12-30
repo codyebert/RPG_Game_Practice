@@ -1,0 +1,12 @@
+import javax.swing.JApplet;
+
+public class MainGame extends JApplet {
+
+	/**
+	 * Create the applet.
+	 */
+	public MainGame() {
+
+	}
+
+}

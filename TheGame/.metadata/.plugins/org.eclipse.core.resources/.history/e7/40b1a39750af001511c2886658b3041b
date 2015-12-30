@@ -1,21 +1,13 @@
 package my.sp.main;
 
 import the.game.gop.main.GameWindow;
-import the.game.gop.main.SpriteSheet;
 
 public class Main {
-	//static SpriteSheet blocks = new SpriteSheet();
-	
 	public static void main(String[] args) {
-		
-		
-	
 		GameWindow frame = new GameWindow("The Seven Pillars", 1280, 720);
 		//Full screen is broken
 		frame.setFullscreen(1);
 		frame.setVisible(true);
-		
-		
 	}
 
 }

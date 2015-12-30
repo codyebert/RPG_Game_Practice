@@ -1,0 +1,9 @@
+package the.game.gop.main;
+
+public class LoadImageFrom {
+
+	public LoadImageFrom() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

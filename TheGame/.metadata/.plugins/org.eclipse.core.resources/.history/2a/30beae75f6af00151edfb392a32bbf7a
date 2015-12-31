@@ -1,9 +1,6 @@
 package the.game.gop.main;
 
 import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
@@ -18,8 +15,6 @@ public class ACGameLoop extends JPanel implements Runnable{
 	private int height;
 	private int width;
 	
-	public Graphics2D  graphics2D; 
-	private BufferedImage img;
 	public static double currFPS = 120D;
 	
 	
@@ -94,8 +89,6 @@ public class ACGameLoop extends JPanel implements Runnable{
 	}
 
 	private void init() {
-		img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-		graphics2D = (Graphics2D) img.getGraphics();
 		running = true;		
 	}
 	private void tick(double deltaTime) {
@@ -103,17 +96,8 @@ public class ACGameLoop extends JPanel implements Runnable{
 		
 	}
 	private void render() {
-		graphics2D.clearRect(0,0,width, height);
+		// TODO Auto-generated method stub
 		
-	}
-	public void clear()
-	{
-		Graphics g2 = getGraphics();
-		if(img != null)
-		{
-			g2.drawImage(img, 0, 0, null);
-		}
-		g2.dispose(); 
 	}
 
 	

@@ -1,0 +1,5 @@
+package my.sp.GameState;
+
+public abstract class GameState {
+
+}

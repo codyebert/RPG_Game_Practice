@@ -1,0 +1,38 @@
+package the.game.gop.main;
+
+public class Vector2F {
+	
+	public static float xPos;
+	public static float yPos;
+	public static float worldXPos;
+	public static float worldYPos;
+
+	//Constructors
+	public Vector2F(float x, float y) {
+		this.xPos = x;
+		this.yPos = y;
+		
+	}
+	public Vector2F() {
+		this.xPos = 0.0f;
+		this.yPos = 0.0f;
+	}
+	//Zeros out the position
+	public static Vector2F zero()
+	{
+		return new Vector2F(0,0);
+	}
+	//Normalizes the vector
+	public static void normalize()
+	{
+		double length = Math.sqrt(xPos * xPos + yPos* yPos);
+		
+		if(length != 0.0)
+		{
+			float s = 1.0f/(float) length;
+			xPos = xPos * s;
+			yPos = yPos * s; 
+		}
+	}
+
+}

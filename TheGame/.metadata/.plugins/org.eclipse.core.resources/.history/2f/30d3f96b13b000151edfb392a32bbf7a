@@ -14,8 +14,7 @@ public class Main {
 		GameWindow frame = new GameWindow("The Seven Pillars", 1280, 720);
 		//Full screen is broken
 		frame.setFullscreen(1);
-		frame.add(new GameLoop(1280, 720));
-		
+		frame.add(new GameLoop(1280, 720))
 		frame.setVisible(true);
 		
 		

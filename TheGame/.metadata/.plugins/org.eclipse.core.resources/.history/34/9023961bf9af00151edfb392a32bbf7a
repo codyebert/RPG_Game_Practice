@@ -93,16 +93,16 @@ public class ACGameLoop extends JPanel implements Runnable{
 		}
 	}
 
-	public void init() {
+	private void init() {
 		img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		graphics2D = (Graphics2D) img.getGraphics();
 		running = true;		
 	}
-	public void tick(double deltaTime) {
+	private void tick(double deltaTime) {
 		// TODO Auto-generated method stub
 		
 	}
-	public void render() {
+	private void render() {
 		graphics2D.clearRect(0,0,width, height);
 		
 	}

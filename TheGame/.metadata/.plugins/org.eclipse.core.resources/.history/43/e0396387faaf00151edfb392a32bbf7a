@@ -1,6 +1,5 @@
 package my.sp.main;
 
-import my.sp.gameloop.GameLoop;
 import the.game.gop.main.GameWindow;
 import the.game.gop.main.SpriteSheet;
 
@@ -14,8 +13,6 @@ public class Main {
 		GameWindow frame = new GameWindow("The Seven Pillars", 1280, 720);
 		//Full screen is broken
 		frame.setFullscreen(1);
-		frame.add(new GameLoop(1280, 720));
-		
 		frame.setVisible(true);
 		
 		

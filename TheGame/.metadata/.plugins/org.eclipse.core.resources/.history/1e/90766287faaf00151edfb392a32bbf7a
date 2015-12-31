@@ -1,0 +1,7 @@
+package my.sp.gameloop;
+
+import java.awt.Component;
+
+public class GameLoop extends Component {
+
+}

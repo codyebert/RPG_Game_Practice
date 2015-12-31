@@ -1,0 +1,43 @@
+package my.sp.gameloop;
+
+import java.awt.Component;
+
+import my.sp.GameState.GameStateManager;
+import the.game.gop.main.ACGameLoop;
+
+public class GameLoop extends ACGameLoop{
+	
+	GameStateManager gsm;
+
+	public GameLoop(int width, int height) {
+		super(width, height);
+		
+		
+		
+	}
+	@Override
+	public void init() {
+		gsm = new GameStateManager();
+		gsm.init();
+		super.init();
+	}
+	@Override
+	public void tick(double deltaTime) {
+		gsm.tick(deltaTime); 
+	
+	}
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		super.clear();
+	}
+	@Override
+	public void render() {
+		// TODO Auto-generated method stub
+		super.render();
+		gsm.render(graphics2D);
+		clear();
+	}
+	
+
+}

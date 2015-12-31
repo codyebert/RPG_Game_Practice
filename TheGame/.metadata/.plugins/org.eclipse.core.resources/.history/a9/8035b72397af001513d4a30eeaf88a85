@@ -9,11 +9,9 @@ public class SpriteSheet {
 	public SpriteSheet() {
 		
 	}
-	//Targets a specific sprite sheet
 	public void setSpriteSheet(BufferedImage spriteSheet) {
 		this.spriteSheet = spriteSheet;
 	}
-	//Returns a given set of tiles (sprite)
 	public BufferedImage getTile(int xTile, int yTile, int width, int height)
 	{
 		BufferedImage sprite = spriteSheet.getSubimage(xTile, yTile, width, height);

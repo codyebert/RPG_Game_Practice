@@ -1,0 +1,34 @@
+package my.sp.GameStates;
+
+import java.awt.Graphics2D;
+
+import my.sp.GameState.GameState;
+import my.sp.GameState.GameStateManager;
+import my.sp.main.Main;
+import the.game.gop.main.SpriteSheet;
+import the.game.gop.main.loadImageFrom;
+
+public class LevelLoader extends GameState {
+
+	SpriteSheet test = new SpriteSheet();
+	public LevelLoader(GameStateManager gsm) {
+		super(gsm);
+			}
+
+	@Override
+	public void init() {
+				test.setSpriteSheet(loadImageFrom.LoadImageFrom(Main.class, "spriteSheet.png"));
+	}
+
+	@Override
+	public void tick(double deltaTime) {
+				
+	}
+
+	@Override
+	public void render(Graphics2D g) {
+			g.drawString("Hello World!", 200, 200);
+			g.drawImage(test.getTile(0, 0, 16, 16), 0, 0, 64, 64, null );
+	}
+
+}

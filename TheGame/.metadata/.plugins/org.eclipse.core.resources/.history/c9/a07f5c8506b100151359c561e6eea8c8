@@ -1,0 +1,9 @@
+package my.sp.generator;
+
+public class TileManager {
+
+	public TileManager() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

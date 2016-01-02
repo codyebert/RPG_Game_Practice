@@ -4,4 +4,13 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.awt.GraphicsDevice"/>
 <fullyQualifiedTypeName name="java.awt.GraphicsEnvironment"/>
+<fullyQualifiedTypeName name="the.game.gop.main.SpriteSheet"/>
+<fullyQualifiedTypeName name="my.sp.main.Assets"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.Graphics2D"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="the.game.gop.main.loadImageFrom"/>
+<fullyQualifiedTypeName name="my.sp.main.Main"/>
+<fullyQualifiedTypeName name="the.game.gop.main.Vector2F"/>
 </qualifiedTypeNameHistroy>

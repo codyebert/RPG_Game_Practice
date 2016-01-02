@@ -1,0 +1,50 @@
+package my.sp.generator;
+
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+import my.sp.main.Main;
+import the.game.gop.main.loadImageFrom;
+
+public class Map {
+
+	TileManager tiles = new TileManager();
+	
+	public Map() {
+	
+	}
+	public void init()
+	{
+		 BufferedImage map = null;
+		 try{
+			 map = loadImageFrom.LoadImageFrom(Main.class, "map.png");
+
+		 }catch(Exception e){
+			 
+		 }
+		 for(int i = 0; i < 100; i++){
+			 for(int j = 0; j < 100; j++){
+				 
+				 int col = map.getRGB(i,j); 
+				 
+				 switch(col & 0x000000){
+				 case 0x808080:
+					 System.out.println("Grey");
+					 break;
+				 
+				 }
+			 }
+			 
+		 }
+		 
+
+	}
+	public void tick(double deltaTime)
+	{
+		
+	}
+	public void render(Graphics2D g)
+	{
+		
+	}
+}

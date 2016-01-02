@@ -1,0 +1,51 @@
+package my.sp.generator;
+
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+import my.sp.main.Main;
+import the.game.gop.main.Vector2F;
+import the.game.gop.main.loadImageFrom;
+
+public class Map {
+
+	TileManager tiles = new TileManager();
+	
+	public Map() {
+	
+	}
+	public void init()
+	{
+		 BufferedImage map = null;
+		 try{
+			 map = loadImageFrom.LoadImageFrom(Main.class, "map.pxm");
+
+		 }catch(Exception e){
+			 
+		 }
+		 for(int i = 1; i < 50; i++){
+			 for(int j = 1; j < 50; j++){
+				 
+				 int col = map.getRGB(i,j); 
+				 
+				 switch(col & 0xFFFFFF){
+				 case 0x808080:
+					 tiles.blocks.add(new Block(new Vector2F(i,j))) ;
+					 break;
+				 
+				 }
+			 }
+			 
+		 }
+		 
+
+	}
+	public void tick(double deltaTime)
+	{
+		
+	}
+	public void render(Graphics2D g)
+	{
+		
+	}
+}

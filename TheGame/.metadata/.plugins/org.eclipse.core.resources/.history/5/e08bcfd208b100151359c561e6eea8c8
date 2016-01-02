@@ -1,0 +1,26 @@
+package my.sp.generator;
+
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+public class Map {
+
+	TileManager tiles = new TileManager();
+	private BufferedImage map;
+	
+	public Map() {
+	
+	}
+	public void init()
+	{
+		System.out.println("INIT DUNGEON!");
+	}
+	public void tick(double deltaTime)
+	{
+		
+	}
+	public void render(Graphics2D g)
+	{
+		
+	}
+}
